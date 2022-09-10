@@ -44,11 +44,11 @@ function Menu () {
                         {Products.filter(param => param.category === post.id).map((element, index) =>
                         <li key={index}>
                             <div className="box1">
-                                <div className="image">
+                                <div className="flex-item-left">
                                     <img src={element.picture} alt="image" width="100" height="100" />
                                 </div>
                                
-                                <div className="text">
+                                <div className="flex-item-right">
                                         <span style={{fontWeight:"bold"}}>{element.cName}</span>
                                         <span>{dot.repeat(strLenght)}</span>
                                         <span style={{fontWeight:"bold"}}>{element.price}</span>
